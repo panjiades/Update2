@@ -10,6 +10,9 @@ cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
 tar xvf Paket2.tar
 rm Paket2.tar
 cd
+cd
+ls
+cd
 echo UPDATE SELESAI
 
 
