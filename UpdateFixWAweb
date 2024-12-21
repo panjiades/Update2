@@ -40,3 +40,4 @@ echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim d
 echo -e "\033[0;37mUntuk keluar, silahkan ketuk tombol" "\033[0;32mENTER" "\033[0;37mdi keyboard..." "\033[0;30mdi keyboard..."
 
 exit 1
+exit
