@@ -29,7 +29,7 @@ clear
 
 mv ~/Override.xml /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2/.local/share/mime/packages/
 
-proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
+proot-distro login ubuntu --user user2 -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
 
 clear
 
