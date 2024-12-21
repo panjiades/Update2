@@ -1,0 +1,42 @@
+#!/bin/bash
+pkg install wget -y
+
+wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
+
+
+cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
+
+ls -A
+
+cd .local/share/mime/packages
+
+ls
+
+cd
+
+clear
+
+echo -e "\033[0;37mSilahkan ketuk tombol" "\033[0;32mY" "\033[0;37mlalu enter..."
+echo -e "\033[0;30m "
+
+rm /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2/.local/share/mime/packages/Override.xml
+
+clear
+
+echo -e "\033[0;37mSilahkan ketuk huruf" "\033[0;32mY" "\033[0;37mkemudian enter di keyboard.."
+
+clear
+
+mv ~/Override.xml /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2/.local/share/mime/packages/
+
+proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
+
+clear
+
+echo -e "\033[0;32m=== SELESAI ==="
+echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
+echo -e "\033[0;37mUpdate fix kirim WA Web Selesai..🥰, sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen🥰"
+echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
+echo -e "\033[0;37mUntuk keluar, silahkan ketuk tombol" "\033[0;32mENTER" "\033[0;37mdi keyboard..." "\033[0;30mdi keyboard..."
+
+exit 1
