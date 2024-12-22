@@ -31,7 +31,7 @@ wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/tab_scr
 wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/zzzz_combine_values
 
 cd
-
+clear
 echo -e "\033[0;32m=== SELESAI ==="
 echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
 echo -e "\033[0;37mUpdate Chrome selesai.."
