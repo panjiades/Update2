@@ -17,6 +17,7 @@ cd
 
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
 
+clear
 
 echo -e "\033[0;32m=== SELESAI ==="
 echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
