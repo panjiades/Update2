@@ -1,4 +1,5 @@
 #!/bin/bash
+
 pkg install wget -y
 
 cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
