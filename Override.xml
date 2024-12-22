@@ -1,192 +1,27 @@
-<?xml version='1.0' encoding='utf-8'?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>Microsoft Word</comment>
-		<sub-class-of type="application/msword"/>
-		<sub-class-of type="application/vnd.ms-word"/>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
-		<sub-class-of type="application/x-msword"/>
-		<sub-class-of type="application/vnd.ms-word.document.macroenabled.12"/>
-		<generic-icon name="wps-office-doc"/>
-		<glob pattern="*.doc" weight="100"/>
-		<glob pattern="*.docm" weight="100"/>
-		<glob pattern="*.rtf" weight="100"/>
-	</mime-type>
-	<mime-type type="application/wps-office.dot">
-		<comment>Microsoft Word Template</comment>
-		<sub-class-of type="application/msword-template"/>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
-		<sub-class-of type="application/vnd.ms-word.template.macroenabled.12"/>
-		<sub-class-of type="application/msword"/>
-		<generic-icon name="wps-office-dot"/>
-		<glob pattern="*.dot" weight="100"/>
-		<glob pattern="*.dotm" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>Microsoft Word Template</comment>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
-		<generic-icon name="wps-office-dot"/>
-		<glob pattern="*.dotx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>Microsoft Word</comment>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
-		<generic-icon name="wps-office-doc"/>
-		<glob pattern="*.docx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>WPS Writer Document</comment>
-		<comment xml:lang="zh_CN">WPS文字 文档</comment>
-		<sub-class-of type="application/vnd.ms-works"/>
-		<generic-icon name="wps-office-wps"/>
-		<glob pattern="*.wps" weight="100"/>
-		<glob pattern="*.wpsx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>WPS Writer Template</comment>
-		<comment xml:lang="zh_CN">WPS文字 模板</comment>
-		<generic-icon name="wps-office-wpt"/>
-		<glob pattern="*.wpt" weight="100"/>
-		<glob pattern="*.wptx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>WPS Writer Security</comment>
-		<comment xml:lang="zh_CN">WPS文字 安全</comment>
-		<generic-icon name="wps-office-wpss"/>
-		<glob pattern="*.wpss" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-		<comment>WPS Writer Outgoing Document</comment>
-		<comment xml:lang="zh_CN">WPS文字 外发文档</comment>
-		<generic-icon name="wps-office-wpso"/>
-		<glob pattern="*.wpso" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>Microsoft Powerpoint</comment>
-		<sub-class-of type="application/vnd.ms-powerpoint"/>
-		<sub-class-of type="application/powerpoint"/>
-		<sub-class-of type="application/mspowerpoint"/>
-		<sub-class-of type="application/x-mspowerpoint"/>
-		<sub-class-of type="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
-		<generic-icon name="wps-office-ppt"/>
-		<sub-class-of type="application/vnd.ms-powerpoint"/>
-		<glob pattern="*.ppt" weight="100"/>
-		<glob pattern="*.pptm" weight="100"/>
-		<glob pattern="*.pps" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>Microsoft Powerpoint Template</comment>
-		<sub-class-of type="application/vnd.ms-powerpoint"/>
-		<sub-class-of type="application/powerpoint"/>
-		<sub-class-of type="application/mspowerpoint"/>
-		<sub-class-of type="application/x-mspowerpoint"/>
-		<sub-class-of type="application/vnd.ms-powerpoint.template.macroenabled.12"/>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.template"/>
-		<generic-icon name="wps-office-pot"/>
-		<glob pattern="*.pot" weight="100"/>
-		<glob pattern="*.potm" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>Microsoft Powerpoint Template</comment>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.template"/>
-		<generic-icon name="wps-office-pot"/>
-		<glob pattern="*.potx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>Microsoft Powerpoint</comment>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
-		<generic-icon name="wps-office-ppt"/>
-		<glob pattern="*.pptx" weight="100"/>
-		<glob pattern="*.ppsx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>WPS Presentation File</comment>
-		<comment xml:lang="zh_CN">WPS演示 演示文稿</comment>
-		<generic-icon name="wps-office-dps"/>
-		<glob pattern="*.dps" weight="100"/>
-		<glob pattern="*.dpsx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>WPS Presentation Template</comment>
-		<comment xml:lang="zh_CN">WPS演示 模板</comment>
-		<generic-icon name="wps-office-dpt"/>
-		<glob pattern="*.dpt" weight="100"/>
-		<glob pattern="*.dptx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>WPS Presentation Security</comment>
-		<comment xml:lang="zh_CN">WPS演示 安全</comment>
-		<generic-icon name="wps-office-dpss"/>
-		<glob pattern="*.dpss" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-		<comment>WPS Presentation Outgoing Documen</comment>
-		<comment xml:lang="zh_CN">WPS演示 外发文档</comment>
-		<generic-icon name="wps-office-dpso"/>
-		<glob pattern="*.dpso" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>Microsoft Excel Spreadsheet</comment>
-		<comment xml:lang="en">Microsoft Excel Spreadsheet</comment>
-		<comment xml:lang="zh_CN">Microsoft Excel 工作表</comment>
-		<sub-class-of type="application/vnd.ms-excel"/>
-		<sub-class-of type="application/msexcel"/>
-		<sub-class-of type="application/x-msexcel"/>
-		<sub-class-of type="application/vnd.ms-excel.sheet.macroenabled.12"/>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
-		<generic-icon name="wps-office-xls"/>
-		<glob pattern="*.xls" weight="100"/>
-		<glob pattern="*.xlsm" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>Microsoft Excel Template</comment>
-		<comment xml:lang="zh_CN">Microsoft Excel 模板</comment>
-		<sub-class-of type="application/vnd.ms-excel.template.macroenabled.12"/>
-		<sub-class-of type="application/vnd.ms-excel"/>
-		<generic-icon name="wps-office-xlt"/>
-		<glob pattern="*.xlt" weight="100"/>
-		<glob pattern="*.xltm" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>Microsoft Excel Template</comment>
-		<comment xml:lang="zh_CN">Microsoft Excel 模板</comment>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
-		<generic-icon name="wps-office-xlt"/>
-		<glob pattern="*.xltx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>Microsoft Excel Spreadsheet</comment>
-		<comment xml:lang="zh_CN">Microsoft Excel 工作表</comment>
-		<sub-class-of type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
-		<generic-icon name="wps-office-xls"/>
-		<glob pattern="*.xlsx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>WPS Spreadsheets Workbook</comment>
-		<comment xml:lang="zh_CN">WPS表格 工作簿</comment>
-		<generic-icon name="wps-office-et"/>
-		<glob pattern="*.et" weight="100"/>
-		<glob pattern="*.etx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>WPS Spreadsheets Template</comment>
-		<comment xml:lang="zh_CN">WPS表格 模板</comment>
-		<generic-icon name="wps-office-ett"/>
-		<glob pattern="*.ett" weight="100"/>
-		<glob pattern="*.ettx" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>WPS Spreadsheets Security</comment>
-		<comment xml:lang="zh_CN">WPS表格 安全</comment>
-		<generic-icon name="wps-office-ets"/>
-		<glob pattern="*.ets" weight="100"/>
-	</mime-type>
-	<mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-		<comment>WPS Spreadsheets Outgoing Documen</comment>
-		<comment xml:lang="zh_CN">WPS表格 外发文档</comment>
-		<generic-icon name="wps-office-eto"/>
-		<glob pattern="*.eto" weight="100"/>
-	</mime-type>
-</mime-info>
+#!/bin/bash
+pkg install wget -y
+
+cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
+
+ls -A
+
+cd .local/share/mime/packages
+
+ls
+
+rm Override.xml
+
+wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
+
+cd
+
+proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
+
+
+echo -e "\033[0;32m=== SELESAI ==="
+echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
+echo -e "\033[0;37mUpdate fix kirim WA Web Selesai..🥰, sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen🥰"
+echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
+echo -e "\033[0;37mUntuk keluar, silahkan ketuk tombol" "\033[0;32mENTER" "\033[0;37mdi keyboard..." "\033[0;30mdi keyboard..."
+
+exit 1
