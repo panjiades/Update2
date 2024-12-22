@@ -23,6 +23,7 @@ echo -e "\033[0;32m=== SELESAI ==="
 echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
 echo -e "\033[0;37mUpdate fix kirim WA Web Selesai..🥰, sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen🥰"
 echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
-echo -e "\033[0;37mKeluarkan saja aplikasi termuxnya, atau ketik" "\033[0;32mexit" "\033[0;37mlalu ENTER di keyboard" "\033[0;30mdi keyboard..."
+echo -e "\033[0;37mKeluarkan saja aplikasi termuxnya.."
+echo -e "\033[0;37mAtau ketik" "\033[0;32mexit" "\033[0;37mlalu ENTER di keyboard" "\033[0;30mdi keyboard..."
 
 exit 1
