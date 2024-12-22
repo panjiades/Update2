@@ -16,7 +16,7 @@ proot-distro login ubuntu  -- bash -c "dpkg --configure -a; apt remove sudo -y; 
 clear
 
 echo -e "\033[0;32mSedang proses install WPS Office 2019..."
-echo -e "\033[0;31mSilahkan Ketik angka Password :" "\033[0;32m123456" "\033[0;37mlalu ENTER di keyboard kalian" 
+echo -e "\033[0;31mSilahkan Ketik angka Password :" "\033[0;32m123456" "\033[0;37mlalu ENTER di keyboard kalian (password tidak terlihat, ketik aja terus enter)" 
 
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd;sudo apt purge wps-office -y; sudo dpkg -i ~/wps-office_11.1.0.11720_arm64.deb; rm ~/wps-office_11.1.0.11720_arm64.deb;exit"
 
