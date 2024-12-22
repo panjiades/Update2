@@ -1,3 +1,7 @@
+pkg install wget -y
+wget -O - https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/UpdateFixWAweb | bash
+
+
 #!/bin/bash
 pkg install wget -y
 
@@ -23,6 +27,6 @@ echo -e "\033[0;32m=== SELESAI ==="
 echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
 echo -e "\033[0;37mUpdate fix kirim WA Web Selesai..🥰, sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen🥰"
 echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
-echo -e "\033[0;37mUntuk keluar, silahkan ketuk tombol" "\033[0;32mENTER" "\033[0;37mdi keyboard..." "\033[0;30mdi keyboard..."
+echo -e "\033[0;37mUntuk keluar, silahkan" "\033[0;32mKeluar atau Swipe" "\033[0;37maplikasi Termux.." "\033[0;30mdi keyboard..."
 
 exit 1
