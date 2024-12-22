@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ ! -d /dev/shm ];then
+  echo 'Better chromium "Reduce Writes" script: cannot mount folders to /dev/shm because that folder is missing!'
+else
+  rm -rf /dev/shm/chromium
+  mkdir -p /dev/shm/chromium
+  
+  profiles="$(find "$HOME/.config/chromium/" -maxdepth 1 -type d '(' -name Default -o -name 'Profile *' ')' | sed 's+.*/++g')"
+  echo "$profiles" | while read -r profile ;do
+  
+    rm -rf "$HOME/.config/chromium/$profile/Service Worker"
+    mkdir -p "/dev/shm/chromium/$profile/serviceWorker"
+    ln -s "/dev/shm/chromium/$profile/serviceWorker" "$HOME/.config/chromium/$profile/Service Worker"
+  done
+  
+  mkdir -p /dev/shm/chromium/cache
+  rm -rf "$HOME/.cache/chromium"
+  ln -s /dev/shm/chromium/cache/ "$HOME/.cache/chromium"
+fi

@@ -1,0 +1,1 @@
+export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-features=ChromeRefresh2023,ChromeWebuiRefresh2023,ChromeRefresh2023NTB:Variation/GM3NewIconWithBackground,FluentScrollbar,FluentOverlayScrollbar,OverlayScrollbar --disable-features=ChromeLabs,SimplifiedBookmarkSaveFlow"

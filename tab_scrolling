@@ -1,0 +1,1 @@
+export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-features=ScrollableTabStrip:minTabWidth/140,TabScrollingButtonPosition:buttonPosition/2,kScrollableTabStripOverflow:tabScrollOverflow/2,kScrollableTabStripWithDragging:tabScrollWithDragMode/2"

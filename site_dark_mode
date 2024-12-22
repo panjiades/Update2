@@ -1,0 +1,1 @@
+export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-features=WebContentsForceDark:inversion_method/cielab_based/image_behavior/none/foreground_lightness_threshold/150/background_lightness_threshold/150" #WebContentsForceDark:increase_text_contrast/true"

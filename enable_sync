@@ -1,0 +1,9 @@
+#!/bin/bash
+
+profiles="$(find "$HOME/.config/chromium/" -maxdepth 1 -type d '(' -name Default -o -name 'Profile *' ')' | sed 's+.*/++g')"
+echo "$profiles" | while read -r profile ;do
+  [ ! -f "$HOME/.config/chromium/$profile/Preferences" ] && continue
+  sed -i 's/"signin":{"allowed":false}/"signin":{"allowed":true,"allowed_on_next_startup":true}/g' "$HOME/.config/chromium/$profile/Preferences"
+  sed -i 's/"signin":{"allowed":false,"allowed_on_next_startup":false}/"signin":{"allowed":true,"allowed_on_next_startup":true}/g' "$HOME/.config/chromium/$profile/Preferences"
+  sed -i 's/"signin":{"AccountReconcilor":{"kDiceMigrationOnStartup2":true},"allowed":false,"allowed_on_next_startup":false}/"signin":{"AccountReconcilor":{"kDiceMigrationOnStartup2":true},"allowed":true,"allowed_on_next_startup":true}/g' "$HOME/.config/chromium/$profile/Preferences"
+done

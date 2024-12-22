@@ -1,0 +1,5 @@
+# API keys found in chromium source code https://chromium.googlesource.com/experimental/chromium/src/+/b08bf82b0df37d15a822b478e23ce633616ed959/google_apis/google_api_keys.cc
+
+export GOOGLE_API_KEY="AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k"
+export GOOGLE_DEFAULT_CLIENT_ID="77185425430.apps.googleusercontent.com"
+export GOOGLE_DEFAULT_CLIENT_SECRET="OTJgUOQcT7lO7GsGZq2G4IlT"

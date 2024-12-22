@@ -1,0 +1,36 @@
+#This script combines multiple invocations of --enable-features and --disable-features into one argument so that Chromium does not ignore any.
+#Written by Botspot for the Pi-Apps Better Chromium script.
+
+#Intercept chromium args and move them to CHROMIUM_FLAGS
+while [ $# -gt 0 ]; do
+  case "$1" in
+    #Avoid passing chromium-browser script args to chromium-browser binary
+    -h | --help | -help | --verbose | -g | --debug | --no-touch-pinch | --temp-profile | -- ) # Stop option prcessing
+      break ;;
+    * )
+      CHROMIUM_FLAGS="$CHROMIUM_FLAGS $1"
+      shift ;;
+  esac
+done
+
+IFS=' '
+enable=''
+disable=''
+new_flags=''
+for word in $CHROMIUM_FLAGS ;do
+  if echo "$word" | grep -q '^--enable-features=' ;then
+    enable="${enable},$(echo "$word" | sed 's/^--enable-features=//g')"
+  elif echo "$word" | grep -q '^--disable-features=' ;then
+    disable="${disable},$(echo "$word" | sed 's/^--disable-features=//g')"
+  else
+    new_flags="$new_flags $word"
+  fi
+done
+
+#remove initial comma
+enable="$(echo "$enable" | sed 's/^,//g')"
+disable="$(echo "$disable" | sed 's/^,//g')"
+
+CHROMIUM_FLAGS="$new_flags"
+[ ! -z "$enable" ] && CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-features=$enable"
+[ ! -z "$disable" ] && CHROMIUM_FLAGS="$CHROMIUM_FLAGS --disable-features=$disable"
