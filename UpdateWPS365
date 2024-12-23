@@ -1,0 +1,46 @@
+#!/bin/bash
+
+clear
+
+cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
+
+echo -e "\033[0;32m=== Sedang download file upgrade WPS Office 365 ==="
+echo -e "\033[0;37msilahkan tunggu.."
+
+wget https://wps-linux-365.wpscdn.cn/wps/download/ep/Linux365/18605/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb
+
+cd
+
+proot-distro login ubuntu  -- bash -c "dpkg --configure -a; apt remove sudo -y; apt install sudo -y;exit"
+
+clear
+
+echo -e "\033[0;32mSedang proses install WPS Office 365..."
+echo -e "\033[0;31mSilahkan Ketik angka Password :" "\033[0;32m123456" "\033[0;37mlalu ENTER di keyboard kalian" 
+
+proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd;sudo apt purge wps-office -y; sudo dpkg -i ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb; rm ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb;exit"
+
+cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
+
+ls -A
+
+cd .local/share/mime/packages
+
+ls
+
+rm Override.xml
+
+wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
+
+cd
+
+proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
+
+clear
+
+echo -e "\033[0;32m=== SELESAI ==="
+echo -e "\033[0;30mUpgrade ke WPS 365 sukses.. "
+echo -e "\033[0;37mUpdate ke WPS Office 365 Selesai.."
+echo -e "\033[0;30mUpdate fix kirim WA Web Selesai.., sekarang udah bisa kirim dokumen melalui Firefox Linux dan bisa dibuka di HP temen "
+echo -e "\033[0;37mKeluarkan saja aplikasi termuxnya.."
+echo -e "\033[0;37mAtau ketik" "\033[0;32mexit" "\033[0;37mlalu ENTER di keyboard" "\033[0;30mdi keyboard..."
