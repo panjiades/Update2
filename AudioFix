@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkg remove pulseaudio -y
+pkg install pulseaudio -y
