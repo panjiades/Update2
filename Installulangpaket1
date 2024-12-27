@@ -1,0 +1,12 @@
+#!/bin/bash
+proot-distro remove ubuntu -y
+proot-distro remove ubuntu
+cd storage/downloads
+
+mv Paket1.tar /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
+cd
+
+cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
+tar xvf Paket1.tar
+rm Paket1.tar
+cd
