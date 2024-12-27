@@ -1,7 +1,7 @@
 #!/bin/bash
 proot-distro remove ubuntu -y
 proot-distro remove ubuntu
-cd storage/downloads
+cd storage/downloads-
 
 mv Paket1.tar /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
 cd
