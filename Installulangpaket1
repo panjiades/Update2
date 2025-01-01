@@ -1,11 +1,24 @@
 #!/bin/bash
-proot-distro remove ubuntu -y
-proot-distro remove ubuntu
-cd storage/downloads-
-
+termux-setup-storage
+termux-change-repo
+pkg update && yes | pkg upgrade
+pkg install android-tools -y
+pkg install x11-repo -y 
+pkg install termux-x11-nightly -y 
+pkg install file -y 
+pkg install pulseaudio -y
+pkg install virglrenderer-android -y
+pkg install proot-distro -y
+mkdir -pv /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
+chmod 777 -R /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
+mkdir .shortcuts
+cd storage/downloads
+mv Mulai.sh ~/.shortcuts
+mv Matikan.sh ~/.shortcuts
 mv Paket1.tar /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
 cd
-
+chmod +x .shortcuts/Mulai.sh
+chmod +x .shortcuts/Matikan.sh
 cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
 tar xvf Paket1.tar
 rm Paket1.tar
