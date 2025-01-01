@@ -4,7 +4,7 @@ termux-setup-storage && yes
 
 termux-change-repo && yes
 
-pkg update && yes | pkg upgrade
+pkg update && yes | pkg upgrade && yes
 pkg install android-tools && yes
 pkg install x11-repo && yes
 pkg install termux-x11-nightly && yes
