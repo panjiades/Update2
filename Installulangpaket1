@@ -7,11 +7,11 @@ termux-change-repo && yes
 pkg update && yes | pkg upgrade
 pkg install android-tools && yes
 pkg install x11-repo && yes
-pkg install termux-x11-nightly -y 
-pkg install file -y 
-pkg install pulseaudio -y
-pkg install virglrenderer-android -y
-pkg install proot-distro -y
+pkg install termux-x11-nightly && yes
+pkg install file && yes
+pkg install pulseaudio && yes
+pkg install virglrenderer-android && yes
+pkg install proot-distro && yes
 mkdir -pv /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
 chmod 777 -R /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
 mkdir .shortcuts
