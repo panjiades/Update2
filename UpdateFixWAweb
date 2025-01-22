@@ -1,7 +1,5 @@
 #!/bin/bash
 
-pkg update && yes
-
 cd
 
 proot-distro login ubuntu --shared-tmp -- bash -c "cd; apt remove sudo -y; apt install sudo -y"
