@@ -22,10 +22,13 @@ rm Override.xml
 
 wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
 
+cd
+
 clear
-echo  
-echo Masukan password 123456 lalu enter saja... ( Tidak terlihat )
-echo 
+echo " "  
+echo "Masukan password : 123456 lalu enter saja..."
+echo "( Password Tidak terlihat )"
+echo " "
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; sudo update-mime-database -V ~/.local/share/mime/; ls -A; cd .local/share/mime/packages; ls; chmod 444 Override.xml;"
 
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; ls -A; cd .local/share/mime; ls; chmod 444 packages;"
