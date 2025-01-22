@@ -8,9 +8,10 @@ ls -A
 
 cd .local/share/mime/
 ls
+chmod 777 packages
 cd packages
 ls
-
+chmod 777 Override.xml
 rm Override.xml
 
 wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
