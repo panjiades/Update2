@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Overrid
 
 cd
 
-proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; ls -A; cd .local/share/mime; chmod -w packages; cd packages; chmod -w Override.xml"
+proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; ls -A; cd .local/share/mime; chmod u-w packages; cd packages; chmod u-w Override.xml"
 
 clear
 
