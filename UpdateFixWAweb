@@ -6,17 +6,28 @@ cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/
 
 ls -A
 
-cd .local/share/mime/packages
-
+cd .local/share/mime/
+ls
+cd packages
 ls
 
 rm Override.xml
 
 wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
 
+chmod -w Override.xml
 cd
 
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
+
+ls -A
+cd .local/share/mime/
+ls
+
+chmod -w packages
+
+cd packages
+chmod -w Override.xml
 
 clear
 
