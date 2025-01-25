@@ -20,21 +20,7 @@ echo -e "\033[0;31mSilahkan Ketik angka Password :" "\033[0;32m123456" "\033[0;3
 
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd;sudo apt purge wps-office -y; sudo dpkg -i ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb; rm ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb;exit"
 
-cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
-
-ls -A
-
-cd .local/share/mime/packages
-
-ls
-
-rm Override.xml
-
-wget https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/Override.xml
-
-cd
-
-proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd; update-mime-database -V ~/.local/share/mime/; exit"
+wget -O - https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/UpdateFixWAweb | bash
 
 clear
 
