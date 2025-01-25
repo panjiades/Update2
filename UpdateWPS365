@@ -4,7 +4,7 @@ clear
 
 cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
 
-echo -e "\033[0;32m=== Sedang download file upgrade WPS Office 365 ==="
+echo -e "\033[0;32m=== Sedang download 764 MB file upgrade WPS Office 365 ==="
 echo -e "\033[0;37msilahkan tunggu.."
 
 wget https://wps-linux-365.wpscdn.cn/wps/download/ep/Linux365/18605/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb
