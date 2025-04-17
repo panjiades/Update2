@@ -16,7 +16,10 @@ proot-distro login ubuntu  -- bash -c "dpkg --configure -a; apt remove sudo -y; 
 clear
 
 echo -e "\033[0;32mSedang proses install WPS Office 365..."
+echo " "
 echo -e "\033[0;31mSilahkan Ketik angka Password :" "\033[0;32m123456" "\033[0;37mlalu ENTER di keyboard kalian" 
+echo "(password tidak terlihat, ketik aja)"
+echo " "
 
 proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd;sudo apt purge wps-office -y; sudo dpkg -i ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb; rm ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb;exit"
 
