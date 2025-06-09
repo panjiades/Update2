@@ -4,10 +4,10 @@ clear
 
 cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
 
-echo -e "\033[0;32m=== Sedang download 764 MB file upgrade WPS Office 365 ==="
+echo -e "\033[0;32m=== Sedang download file upgrade WPS Office 365 ==="
 echo -e "\033[0;37msilahkan tunggu.."
 
-wget https://wps-linux-365.wpscdn.cn/wps/download/ep/Linux365/18605/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb
+wget https://ks3.wpsplus.wpscdn.cn/img/wps-office_12.8.2.17001.AK.preload.sw._integration_xiezuo4.25.0_arm64.deb
 
 cd
 
@@ -21,7 +21,7 @@ echo -e "\033[0;31mSilahkan Ketik angka Password :" "\033[0;32m123456" "\033[0;3
 echo "(password tidak terlihat, ketik aja)"
 echo " "
 
-proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd;sudo apt purge wps-office -y; sudo dpkg -i ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb; rm ~/wps-office_12.8.2.18605.AK.preload.sw_arm64.deb;exit"
+proot-distro login ubuntu --user user2 --shared-tmp -- bash -c "cd;sudo apt purge wps-office -y; sudo dpkg -i ~/wps-office_12.8.2.17001.AK.preload.sw._integration_xiezuo4.25.0_arm64.deb; exit"
 
 wget -O - https://raw.githubusercontent.com/panjiades/Update2/refs/heads/main/UpdateFixWAweb | bash
 
