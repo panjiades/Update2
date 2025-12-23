@@ -4,10 +4,17 @@ clear
 
 cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/home/user2
 
-echo -e "\033[0;32m=== Sedang download file downgrade WPS Office 2019 ==="
-echo -e "\033[0;37msilahkan tunggu.."
+# Nama file yang akan diperiksa
+FILE="wps-office_11.1.0.11720_arm64.deb"
 
-wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wps-office_11.1.0.11720_arm64.deb
+if [ -f "$FILE" ]; then
+    echo -e "\033[0;33mFile $FILE sudah ada.\033[0m"
+else
+    echo -e "\033[0;32m=== Sedang download file downgrade WPS Office 2019 ==="
+    echo -e "\033[0;37msilahkan tunggu.."
+    wget https://github.com/Pi-Apps-Coders/files/releases/download/large-files/$FILE
+fi
+
 cd
 
 proot-distro login ubuntu  -- bash -c "dpkg --configure -a; apt remove sudo -y; apt install sudo -y;exit"
